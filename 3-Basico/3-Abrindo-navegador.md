@@ -1,4 +1,4 @@
-# 3.2 - Abrindo navegador
+# 3.3 - Abrindo navegador
 
 Após o download do driver da sua escolha, podemos criar um script simples para abrir o navegador.
 

@@ -1,4 +1,4 @@
-# 3.3 - Script simples
+# 3.4 - Script simples
 
 Agora que já vimos o básico para abrirmos o navegador, vamos fazer um script bem simples para acessar o site da He4rt e colocar no modo escuro, bora?
 
@@ -70,4 +70,4 @@ public static void main(String[] args) {
     }
 ```
 
-<!-- Ir para: [3.4 Variáveis](04-Variaveis.md) -->
+<!-- Ir para: [3.4 ]() -->

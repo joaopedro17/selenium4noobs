@@ -1,4 +1,4 @@
-# 3.1 - WebDriver
+# 3.2 - WebDriver
 
 O WebDriver é um recurso que se acopla à API do Selenium, permitindo a execução direta de testes via código fonte no servidor.<br>
 Ele faz uso de uma API JavaScript extensiva que, aliada ao motor JavaScript do próprio navegador, permite acesso ao documento DOM completo da página HTML, assim como a manipulação de suas propriedades e funções.<br> Em outras palavras, ele permite traduzir o código de servidor para o código de cliente e executar nossos testes automatizados no universo front-end dos diversos browsers suportados.

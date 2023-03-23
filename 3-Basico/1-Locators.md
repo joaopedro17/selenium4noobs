@@ -1,4 +1,4 @@
-# 3.0 - Locators
+# 3.1 - Locators
 
 A primeira coisa que precisamos aprender é buscar elementos corretamente. Existem ainda algumas ferramentas que auxiliam nessa inspeção por elementos.
 
