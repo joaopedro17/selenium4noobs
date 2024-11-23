@@ -1,7 +1,7 @@
 # Selenium4Noobs
 
 <h1 align="center">
-  <img src="./images/selenium-logo.png" alt="php" width="120">
+  <img src="./images/selenium-logo.png" width="120">
 </h1>
 
 <p align="center">Tutorial De Selenium para iniciantes em automação de testes.</p>
@@ -12,7 +12,7 @@
   </a>
 </p>
 
-## ROADMAP
+## Sumário
 
 ### Introdução
 
@@ -36,8 +36,10 @@
 
 ### Módulo Intermediário
 
-(Em construção)
-
+1. [Page Object](/4-Intermediário/1-Page-object.md)
+2. [Driver factory](/4-Intermediário/2-Driver-factory.md)
+3. [Espera implícita e explícita](/4-Intermediário/3-Espera-implicita-e-explicita.md)
+4. [Injeção de JavaScript](/4-Intermediário/4-Injecao-de-javascript.md)
 
 ## Como Contribuir
 

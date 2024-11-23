@@ -70,4 +70,4 @@ public static void main(String[] args) {
     }
 ```
 
-<!-- Ir para: [3.4 ]() -->
+Ir para: [4.1 Page object](../4-Intermediário/1-Page-object.md) 
