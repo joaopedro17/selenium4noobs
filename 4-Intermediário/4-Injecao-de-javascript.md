@@ -6,23 +6,23 @@ A injeção de JavaScript no Selenium refere-se ao uso de scripts JavaScript den
 
 1. **Interagir com elementos não acessíveis via Selenium:**
 
-       Alguns elementos podem estar ocultos ou fora da área visível do DOM, dificultando a interação direta. O JavaScript pode manipular esses elementos diretamente.
+      > Alguns elementos podem estar ocultos ou fora da área visível do DOM, dificultando a interação direta. O JavaScript pode manipular esses elementos diretamente.
 
 2. **Simular eventos ou interações complexas:**
 
-       Eventos personalizados (como onmouseover, onfocus, ou outros eventos JavaScript complexos) podem ser acionados diretamente.
+      > Eventos personalizados (como onmouseover, onfocus, ou outros eventos JavaScript complexos) podem ser acionados diretamente.
 
 3. **Obter informações do DOM:**
 
-       Extração de informações específicas que não estão acessíveis diretamente via APIs do Selenium, como valores calculados pelo navegador (ex.: estilos CSS aplicados dinamicamente).
+      > Extração de informações específicas que não estão acessíveis diretamente via APIs do Selenium, como valores calculados pelo navegador (ex.: estilos CSS aplicados dinamicamente).
 
 4. **Desempenho:**
 
-       Em alguns casos, executar scripts JavaScript é mais rápido do que usar as interações padrão do Selenium.
+      > Em alguns casos, executar scripts JavaScript é mais rápido do que usar as interações padrão do Selenium.
 
 5. **Manipular tempo de execução:**
 
-       Forçar o carregamento de elementos ou ignorar restrições temporais configuradas via JavaScript na página.
+      > Forçar o carregamento de elementos ou ignorar restrições temporais configuradas via JavaScript na página.
 
 
 ## Cuidados e Melhores Práticas
