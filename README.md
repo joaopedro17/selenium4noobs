@@ -8,11 +8,11 @@
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg">
   </a>
 </p>
 
-## Sumário
+## ROADMAP
 
 ### Introdução
 
@@ -54,8 +54,16 @@ são **extremamente apreciadas**
 
 ## Autores
 
-- **João Pedro Luz (joaopedro__)** - _Quality Analyst Engineer & Menber of He4rt Developers_ - [Twitter](https://twitter.com/joao_pedro_mlc)
-
+<p>
+ <b>João Pedro Luz</b> - _Quality Analyst Engineer & Menber of He4rt Developers_
+  <a href="https://www.linkedin.com/in/joao-pedro-m-l-c/">
+    <img width="95" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">
+  </a>
+  <a>
+  <a href="https://x.com/joao_pedro_mlc">
+    <img src="https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white">
+  </a>
+</p>
 
 <p align="center">Made with 💜</p>
 
