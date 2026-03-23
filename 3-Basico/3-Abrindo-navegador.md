@@ -1,37 +1,53 @@
 # 3.3 - Abrindo navegador
 
-Após o download do driver da sua escolha, podemos criar um script simples para abrir o navegador.
+Após configurar o projeto, podemos criar um script simples para abrir o navegador.
 
 Então vamo lá!
 
-Aqui vou mostrar com chrome mas vale pra todos.
+## Abordagem moderna (Selenium 4 + Selenium Manager)
 
-Primeiramente vamos setar o driver do Selenium com o driver baixado, pra isso vamos usar a função do Java `System.setProperty();`
+A partir do **Selenium 4.6+**, o **Selenium Manager** configura o driver do navegador automaticamente. Você não precisa baixar o ChromeDriver, geckodriver nem usar `System.setProperty`. Basta instanciar o driver diretamente:
 
-Depois disso, basta chamar o WebDriver e intanciar o chrome driver do Selenium
+```java
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-```Java
-public static void main(String[] args) {
-
-        System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
-
-        WebDriver driver = new ChromeDriver();
-    }
+public class AbrindoNavegador {
+    public static void main(String[] args) {
+        WebDriver driver = new ChromeDriver();
+    }
+}
 ```
 
-### Manipulando a dimenssão do browser
+### Manipulando a dimensão do browser
 
-Após o script rodar, você vai perceber que a janela do browser não está maximizada, para maximizar vamos fazer assim.
+Após o script rodar, você vai perceber que a janela do browser não está maximizada. Para maximizar:
 
-```Java
-public static void main(String[] args) {
+```java
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-        System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
-
-        WebDriver driver = new ChromeDriver();
+public class AbrindoNavegador {
+    public static void main(String[] args) {
+        WebDriver driver = new ChromeDriver();
 
         driver.manage().window().maximize();
-    }
+
+        // Sempre encerre o driver ao final
+        driver.quit();
+    }
+}
 ```
+
+## Abordagem legada (antes do Selenium 4.6)
+
+Caso esteja usando uma versão mais antiga do Selenium, é necessário indicar manualmente o caminho do driver com `System.setProperty`:
+
+```java
+System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+```
+
+> **Recomendação:** Use sempre a versão mais recente do Selenium para aproveitar o Selenium Manager e evitar a manutenção manual dos drivers.
 
 Ir para: [3.4 Scripts simples](4-Scripts-simples.md)

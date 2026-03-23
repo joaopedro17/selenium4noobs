@@ -32,7 +32,7 @@
 1. [Locators](/3-Basico/1-Locators.md)
 2. [WebDriver](/3-Basico/2-WebDriver.md)
 3. [Abrindo navegador](/3-Basico/3-Abrindo-navegador.md)
-4. [Scripts simples](/3-Basico/4-Script-simples.md)
+4. [Scripts simples](/3-Basico/4-Scripts-simples.md)
 
 ### Módulo Intermediário
 
@@ -40,6 +40,14 @@
 2. [Driver factory](/4-Intermediário/2-Driver-factory.md)
 3. [Espera implícita e explícita](/4-Intermediário/3-Espera-implicita-e-explicita.md)
 4. [Injeção de JavaScript](/4-Intermediário/4-Injecao-de-javascript.md)
+5. [TestNG](/4-Intermediário/5-TestNG.md)
+
+### Módulo Avançado
+
+1. [Selenium Grid](/5-Avancado/1-Selenium-grid.md)
+2. [Testes Paralelos](/5-Avancado/2-Testes-paralelos.md)
+3. [Integração com CI/CD](/5-Avancado/3-CI-CD.md)
+4. [Execução Headless](/5-Avancado/4-Headless.md)
 
 ## Como Contribuir
 
@@ -52,10 +60,12 @@ são **extremamente apreciadas**
 4. Realize o Push no Branch (`git push origin feature/featureBraba`)
 5. Abra um Pull Request
 
+Leia o [CONTRIBUTING.md](CONTRIBUTING.md) para mais detalhes sobre o processo de contribuição.
+
 ## Autores
 
 <p>
- <b>João Pedro Luz</b> - _Quality Analyst Engineer & Menber of He4rt Developers_
+ <b>João Pedro Luz</b> - _Quality Analyst Engineer & Member of He4rt Developers_
   <a href="https://www.linkedin.com/in/joao-pedro-m-l-c/">
     <img width="95" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>

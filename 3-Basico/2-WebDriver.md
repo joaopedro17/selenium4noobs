@@ -14,6 +14,17 @@ Exemplo:
 - Chrome => <a href="https://chromedriver.chromium.org/downloads">ChromeDriver</a><br>
 - Firefox => <a href="https://github.com/mozilla/geckodriver/releases">geckodriver</a><br>
 
-## 
+> **Dica Selenium 4:** A partir do Selenium 4.6+, o **Selenium Manager** faz o download e a configuração do driver automaticamente. Você não precisa mais baixar o driver manualmente nem usar `System.setProperty`. Basta instanciar o driver e o Selenium cuida do resto.
+
+## Encerrando o WebDriver
+
+Sempre que terminar os testes, encerre o WebDriver para fechar o navegador e liberar os recursos. Existem dois métodos:
+
+- `driver.close()` — fecha apenas a aba/janela atual.
+- `driver.quit()` — fecha **todas** as janelas e encerra o processo do driver. **Prefira sempre `quit()`** para evitar processos zumbi.
+
+```java
+driver.quit();
+```
 
 Ir para: [3.3 Abrindo navegador](3-Abrindo-navegador.md)

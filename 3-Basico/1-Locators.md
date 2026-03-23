@@ -8,7 +8,7 @@ Para interagir com o elemento devemos acha-lo primeiro. Vamos conhecer alguns lo
 
 ## Conhecendo um a estrutura de um Elemento
 
-PPrimeiro temos que saber o que é um elemento antes de captura-lo, já sabemos que existem várias possibilidades de busca, seja ela por um valor, um conteúdo, uma tag, um atributo, todo esse conjunto forma um elemento, e dentro desse elemento que podemos realizar nossa busca para interagir.
+Primeiro temos que saber o que é um elemento antes de captura-lo, já sabemos que existem várias possibilidades de busca, seja ela por um valor, um conteúdo, uma tag, um atributo, todo esse conjunto forma um elemento, e dentro desse elemento que podemos realizar nossa busca para interagir.
 
 O que forma esse elemento é uma estrutura ou bloco de códigos, mas individual para cada elemento dentro da tela, para que possamos interagir com eles e fazer o mapeamento correto, não se desespere quando não encontrar uma cadeia de códigos com o formato bonitinho, sempre tem uma solução.
 <ul>
@@ -17,32 +17,36 @@ O que forma esse elemento é uma estrutura ou bloco de códigos, mas individual 
 
 ## ID
 
-Localizar um elemento pelo “ID” é a maneira mais fácil e segura, os elementos com id são menos propensos a alterações do que outros elementos. Podemos identificar os id’s através do # (sharp,hash).
+Localizar um elemento pelo “ID” é a maneira mais fácil e segura, os elementos com id são menos propensos a alterações do que outros elementos. O `By.id()` recebe diretamente o valor do atributo `id`, sem nenhum prefixo.
 
-Exemplo Funcionais:
+> **Nota:** O símbolo `#` é a notação do **CSS Selector** para IDs (ex: `By.cssSelector(“#email”)`). O `By.id()` não usa `#`.
+
+Exemplo Funcional:
 
 **Elemento**
 ```html
-<input type="email" class="inputtext" id="email" tabindex="1" data-testid="royal_email">
+<input type=”email” class=”inputtext” id=”email” tabindex=”1” data-testid=”royal_email”>
 ```
 
 **Seleção por ID**
-```Java
-findElement(By.id("email"));
+```java
+findElement(By.id(“email”));
 ```
 
 ## Class
 
-Localizar um elemento pelo atributo “class”, é comum possuir vários elementos que representam essa busca na mesma linha. Podemos identificar as classes através do . (ponto final).
+Localizar um elemento pelo atributo “class”, é comum possuir vários elementos que representam essa busca na mesma página. O `By.className()` recebe o nome da classe diretamente, sem nenhum prefixo.
+
+> **Nota:** O símbolo `.` é a notação do **CSS Selector** para classes (ex: `By.cssSelector(“.inputtext”)`). O `By.className()` não usa `.`.
 
 **Elemento**
 ```html
-<input type="email" class="inputtext" id="email" tabindex="1" data-testid="royal_email">
+<input type=”email” class=”inputtext” id=”email” tabindex=”1” data-testid=”royal_email”>
 ```
 
 **Seleção por Class**
-```Java
-findElement(By.className("email"));
+```java
+findElement(By.className(“inputtext”));
 ```
 
 ## Xpath
@@ -55,8 +59,8 @@ Muito se ouve falar desse tipo de inspeção, a quem defenda e quem condene, mas
 ```
 
 **Seleção por Xpath**
-```Java
-findElement(By.Xpath("//*[@id='pass']"));
+```java
+findElement(By.xpath("//*[@id='pass']"));
 ```
 
 ## CSS
@@ -65,7 +69,7 @@ Funciona como um xpath, pode ser utilizado como uma estrutura também ou um queb
 
 
 **Seleção por CSS**
-```Java
+```java
 // Campo de pesquisa do google
 findElement(By.cssSelector("body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input"));
 ```
