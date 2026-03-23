@@ -40,6 +40,7 @@
 2. [Driver factory](/4-Intermediário/2-Driver-factory.md)
 3. [Espera implícita e explícita](/4-Intermediário/3-Espera-implicita-e-explicita.md)
 4. [Injeção de JavaScript](/4-Intermediário/4-Injecao-de-javascript.md)
+5. [TestNG](/4-Intermediário/5-TestNG.md)
 
 ### Módulo Avançado
 

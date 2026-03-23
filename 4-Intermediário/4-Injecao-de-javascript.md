@@ -93,4 +93,4 @@ public class JavaScriptInjectionExample {
 4. **Retorno de valores:**
    - Se o script retornar um valor (ex: `return document.title`), faça o cast para o tipo esperado.
 
-Ir para: [5.1 Selenium Grid](../5-Avancado/1-Selenium-grid.md)
+Ir para: [4.5 TestNG](5-TestNG.md)
