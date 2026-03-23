@@ -26,20 +26,20 @@ No Selenium, as esperas são usadas para sincronizar a execução do script de a
 
 - **Uso:** É útil quando todos os elementos em sua automação têm tempos semelhantes de carregamento.
 
-```Java
+```java
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 public class ImplicitWaitExample {
     public static void main(String[] args) {
-        // Configuração do WebDriver
-        System.setProperty("webdriver.chrome.driver", "caminho/para/chromedriver");
+        // Selenium Manager configura o driver automaticamente (Selenium 4.6+)
         WebDriver driver = new ChromeDriver();
 
-        // Definindo espera implícita
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        // Definindo espera implícita (API moderna do Selenium 4)
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         // Acessando uma página
         driver.get("https://exemplo.com");
@@ -64,7 +64,7 @@ public class ImplicitWaitExample {
 
 - **Uso:** É mais flexível e geralmente preferido em cenários onde diferentes elementos têm diferentes tempos de carregamento.
 
-```Java
+```java
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -76,8 +76,7 @@ import java.time.Duration;
 
 public class ExplicitWaitExample {
     public static void main(String[] args) {
-        // Configuração do WebDriver
-        System.setProperty("webdriver.chrome.driver", "caminho/para/chromedriver");
+        // Selenium Manager configura o driver automaticamente (Selenium 4.6+)
         WebDriver driver = new ChromeDriver();
 
         // Acessando uma página

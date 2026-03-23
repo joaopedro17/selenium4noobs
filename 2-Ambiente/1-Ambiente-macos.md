@@ -18,11 +18,11 @@ Para setar a variavel de ambiente você deverá fazer o seguinte:
     <li> Após a instalação descrite acima abra o terminal e digite o comando de com o terminal que estiver usando.</li>
     <ul>
       <li>Se for bash <b>./bash_profile</b></li>
-      <li>Se for zxh <b>./zshrc</b></li>
+      <li>Se for zsh <b>./zshrc</b></li>
     </ul>
     <li>Abra o vim de acordo com o terminal que estiver usando.</li>
     <img src="../images/java-mac-1.png">
-    <li>Pesse o comando como na foto abaixo. (O caminho de instalação pode variar em algumas versões do MacOS)</li>
+    <li>Passe o comando como na foto abaixo. (O caminho de instalação pode variar em algumas versões do MacOS)</li>
     <img src="../images/java-mac-2.png">
     <li>Após salvar as mudanças e fechar o vim, rode o seguinte comando para efetivar as mudanças.</li>
     <img src="../images/java-mac-3.png">

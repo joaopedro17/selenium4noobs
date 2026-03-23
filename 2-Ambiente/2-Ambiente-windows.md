@@ -52,4 +52,4 @@ Siga as seguintes instruções:
 
 ---
 
-Ir para: [2.4 Editor e inicio](4-Editore-e-inicio.md)
+Ir para: [2.4 Editor e inicio](4-Editor-e-inicio.md)

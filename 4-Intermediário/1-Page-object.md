@@ -91,7 +91,10 @@ public class LoginPage {
 
 A classe de teste utiliza a página encapsulada para executar as ações e realizar validações:
 
-```Java
+```java
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -100,27 +103,29 @@ public class LoginPageTest {
     private WebDriver driver;
     private LoginPage loginPage;
 
+    @Before
     public void setUp() {
-        // Configuração do WebDriver (ajuste o caminho do driver para sua configuração local)
-        System.setProperty("webdriver.chrome.driver", "caminho/do/chromedriver");
+        // Selenium Manager (Selenium 4.6+) configura o driver automaticamente
         driver = new ChromeDriver();
         driver.get("https://exemplo.com/login");
-        
+
         // Inicialização da classe LoginPage
         loginPage = new LoginPage(driver);
     }
 
+    @Test
     public void testLoginSuccessfully() {
         // Ações no POM
         loginPage.enterUsername("test_user");
         loginPage.enterPassword("password123");
         loginPage.clickLogin();
 
-        // Validação
+        // Validação (ex: Assert.assertTrue(driver.getCurrentUrl().contains("dashboard")))
     }
 
+    @After
     public void tearDown() {
-        // Fecha o navegador
+        // Fecha o navegador após cada teste
         if (driver != null) {
             driver.quit();
         }

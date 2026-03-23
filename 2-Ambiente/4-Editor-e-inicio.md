@@ -13,7 +13,7 @@ O Intellij ajuda na hora de criarmos um projeto simples com o Maven como vou mos
 
 Instale a versão **Community Edition**
 
-**Não é necessaário instalar nenhum plugin**
+**Não é necessário instalar nenhum plugin**
 
 ### Dando start no projeto
 
@@ -30,7 +30,7 @@ Maven é um dos gerenciadores de pacote para o Java
     <img src="../images/ide-2.png">
 </ul>
 
-### Instalndo dependências
+### Instalando dependências
 
 Agora só precisamos de duas dependência para iniciarmos.
 
